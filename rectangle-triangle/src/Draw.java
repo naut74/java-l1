@@ -22,7 +22,7 @@ public class Draw {
                     }
                     break;
                 case 2:
-                    System.out.println("Draw the square triagle top-left");
+                    System.out.println("Draw the square triangle bottom-left");
                     for (int i = 1; i <= 5; i++){
                         System.out.println(" ");
                         for (int j = 1; j <= i; j++) {
@@ -33,27 +33,27 @@ public class Draw {
                     for (int i = 0; i < 5; i++) {
                         for (int j = 0; j < 5; j++) {
                             if (j >= i) {
-                                System.out.print("*");
+                                System.out.print("* ");
                             } else {
-                                System.out.print(" ");
+                                System.out.print("  ");
                             }
                         }
                         System.out.println();
                     }
-                    System.out.println("\n\nDraw the square triagle bottom-left");
+                    System.out.println("\n\nDraw the square triangle top-left");
                     for (int i = 1; i <= 5; i++){
                         System.out.println(" ");
                         for (int j = 5; j >= i; j--) {
                             System.out.print("* ");
                         }
                     }
-                    System.out.println("\n\nDraw the square triagle bottom-right");
-                    for (int i = 0; i < 6; i++) {
-                        for (int j = 0; j < 6; j++) {
-                            if (j >= i) {
+                    System.out.println("\n\nDraw the square triangle bottom-right");
+                    for (int i = 1; i <= 5; i++) {
+                        for (int j = 5; j >= 0; j--) {
+                            if (j > i) {
                                 System.out.print("  ");
                             } else {
-                                System.out.print("*");
+                                System.out.print("* ");
                             }
                         }
                         System.out.println();
